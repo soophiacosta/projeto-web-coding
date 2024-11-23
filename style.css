@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: system-ui;
+}
+
+body {
+    background-color: #ededed; /* Propriedade: background-color */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o body ocupe toda a altura da janela */
+    margin: 0;
+}
+
+main{
+    padding: 30px 0;
+    flex: 1 1 0;
+}
+
+header {
+    background-color: #15007c; /* Propriedade: background-color */
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    display: flex; /* Propriedade: display flex */
+    justify-content: space-between; /* Propriedade: justify-content */
+    align-items: center; /* Propriedade: align-items */
+}
+
+nav a {
+    color: #ffffff;
+    margin: 0 1rem;
+    text-decoration: none;
+    transition: color 0.3s; 
+}
+
+nav a:hover {
+    color: #757575; /* sombreado cinza na aba menu*/
+}
+
+/* botões */
+/* botao mode */
+#btn-mode{
+    position: absolute;
+    top: 20px;
+    right: 200px;
+    width: 100px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 1000; /* Fica acima do menu */
+}
+  /* Botão para abrir/fechar o menu */
+#menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 100px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 1000; /* Fica acima do menu */
+}
+
+/* Menu deslizante */
+#menuslide {
+    position: fixed;
+    top: 20px;
+    right: -250px; /* Escondido fora da tela, do lado direito */
+    width: 250px;
+    height: 100%;
+    background-color: #15007c;
+    border: none;
+    color: #ffffff;
+    font-size: 18px;
+    transition: right 0.3s ease; /* Transição suave ao abrir/fechar */
+}
+  
+#menuslide ul {
+    list-style-type: none;
+    padding: 80px 0 0;
+    margin: 0;
+}
+    
+#menuslide li {
+    padding: 20px;
+    border-bottom: 1px solid #ffffff;
+}
+    
+#menuslide a {
+    color: #ffffff;
+    text-decoration: none;
+}
+    
+#menuslide a:hover {
+    text-decoration: underline;
+}
+    
+/* fim dos botoes*/
+
+footer{
+    height: 80px;
+    background-color: #15007c;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Seção dos integrantes */
+#integrantes {
+    display: flex; /* Propriedade: display flex */
+    gap: 80px;
+    flex-wrap: wrap;
+    justify-content: center; /* Propriedade: justify-content */
+}
+  
+.integrante {
+    background-color: #15007c;
+    color: #ffffff;
+    padding: 30px;
+    border-radius: 5px;
+    width: 300px;
+    transition: transform 0.3s; /* Propriedade: transition e transform */
+}
+  
+.integrante:hover {
+    transform: scale(1.05); /* Propriedade: transform e hover */
+}
+  
+.integrante img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+/* fim da Seção dos integrantes */
+
+
+/* carrossel de imagens*/
+
+.carousel-container{
+    padding: 20px 0;   
+    display: flex;
+    /* só funciona com o display flex */
+    justify-content: center;
+    gap: 70px;
+    flex-wrap: wrap;
+    
+}
+.carousel-container figure{
+    width: 550px;
+    height: 380px;
+}
+#carousel{
+    width: 480px;
+    height: 300px;
+}
+  
+.card {
+    background-color:  #15007c; /* Propriedade: background-color */
+    color: #ffffff;
+    border-radius: 7px;
+    padding: 1rem;
+    width: 680px;
+    transition: transform 0.3s; /* Propriedade: transition e transform */
+    text-align: center;
+}
+  
+.card:hover {
+    transform: scale(1.1); /* Propriedade: transform e hover */
+}
+  /* fim carrossel de imagens*/
+
+/* Formulário de contato */
+.contato {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #15007c; /* Propriedade: background-color */
+    padding: 2rem;
+    border-radius: 5px;
+    color:#ffffff
+}
+  
+label, input, textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+  
+button {
+    background-color: #ededed; /* Propriedade: background-color */
+    color: #15007c;
+    border: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s; /* Propriedade: transition */
+}
+  
+button:hover {
+    background-color: #555; /* Propriedade: hover */
+}
+  
+/* Fim do formulário de contato */
+  
+  
+/* modo escuro */
+body{
+    transition: all 0.3s;
+}
+   
+.dark-mode{
+  background: #000000;   
+}
+  /* fim do modo escuro */

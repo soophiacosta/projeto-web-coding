@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Galeria</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <h1>Galeria</h1>
+    <input type="button" value="Mode" id="btn-mode" onclick="mode()">
+    <!-- Botão para abrir/fechar o menu -->
+    <button id="menu">☰ Menu</button>
+     <!-- Menu deslizante -->
+    <nav id = "menuslide">
+      <ul>
+      <li><a href="index.html">Sobre o Grupo</a></li>
+      <li><a href="galeria.html">Galeria</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+    </nav>
+  </header>
+  
+  <!-- Conteúdo Principal -->
+  <main>
+    <section class="carousel-container">
+      <figure class = "card">
+          <img src="img1.jpg" alt="filmes" id="carousel" onmouseenter="mudaImagem()">
+          <p>Filmes assistidos</p>
+      </figure>
+      
+
+    </section>
+  </main>
+  
+  <!-- Rodapé -->
+  <footer>
+    <p>  Exposição do Grupo</p>
+    <p id="relogio">relógio</p>
+  </footer>
+</body>
+</html>
